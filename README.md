@@ -20,9 +20,9 @@ Comandos pra instalar:
 
 * `pkg install nodejs `
 
-* `git clone https://github.com/Meliodas-rai/Bot `
+* `git clone https://github.com/titiunescau/Nezukobot.git `
 
-* `cd Bot `
+* `cd Nezukobot `
 
 * `bash install.sh `
 
@@ -60,4 +60,4 @@ Comandos pra instalar:
 
 * OBS: o bot só pode ser instalador em celulares com o androind acima de 4.0 ou 5.0
 
-<h3 align="center">⚡SUPER XANDÃO⚡</h3>
+<h3 align="center">⚡Nezuko bot⚡</h3>
