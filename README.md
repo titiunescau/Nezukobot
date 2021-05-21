@@ -42,7 +42,7 @@ Comandos pra instalar:
 
 ## Comandos para ligar o bot novamente
 
-* `cd Bot`
+* `cd Nezukebot`
 
 * `git pull `
 
