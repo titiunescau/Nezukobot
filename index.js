@@ -3986,7 +3986,7 @@ break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite * # Daftarvip * para adquirir o acesso Premium!' ,text, { quoted: mek })
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply(' A marca-alvo que você deseja chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
@@ -4003,7 +4003,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOTTitiu Nescau︎ ✨* 」\n*│+ wa.me/5547992091566*╰──────*「 *✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎* 」*────*\n\n*_SE QUER SER ADMIN DO BOTTitiu Nescau︎_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT Nezuko ✨* 」\n*│+ wa.me/559887053394*╰──────*「 *✞Titiu Nescau✞︎* 」*────*\n\n*_SE QUER SER ADMIN DO BOT Nezuko_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -4080,7 +4080,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o ⚡NEZUKO BOT ⚡_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/Titiu Nescau -rai/Bot\n\ncd Bot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o ⚡NEZUKO BOT ⚡_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/titiunescau/Nezukobot.git\n\ncd Nezukobot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -4193,7 +4193,7 @@ break
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.ibb.co/Q6TftwD/Titiu Nescau .png`)
+					buffer = await getBuffer(`https://i.ibb.co/XzYf83b/titiunescau-1.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Criador da NEZUKO:Eae meu parsa, sou ꧁╰‿╯TITIU NESCAU ╰‿╯꧂ Pai  do toddy e sou criador do Bot NEZUKO BOT  \n*WPP:* wa.me/+559887053394\n\n\nEspero que tenham gostado do bot 💪\n*Kibadores vão se FUDER*️'})
 					break
 				case 'dono2':
@@ -4207,13 +4207,7 @@ break
 					prefix = args[0]
 					reply(`O prefixo foi alterado com sucesso para : ${prefix}`)
 					break
-				case 'loli':
-					loli.getSFWLoli(async (err, res) => {
-						if (err) return reply('❌ *ERROR* ❌')
-						buffer = await getBuffer(res.url)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'lolizinha'})
-					})
-					break
+				 
                 case 'lolih':
                     gatauda = body.slice(6)
                     reply(mess.wait)
