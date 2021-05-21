@@ -865,7 +865,7 @@ if (text.includes("placa"))
 	            case 'menu':
 	            case 'help':
 	            	uptime = process.uptime ()
-                    putagg = await getBuffer(`https://i.ibb.co/W5p89Mb/nezuko-bo-t.jpg`)
+                    putagg = await getBuffer(`https://i.ibb.co/W5p89Mb/nezukobot2.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname, time)})
                     break
                 case 'figu':
