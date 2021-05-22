@@ -2173,7 +2173,7 @@ tujuh = fs.readFileSync('./assets/beatn.m4a');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
 case 'nezuke2':
-tujuh = fs.readFileSync('./assets/edit.mp4');
+tujuh = fs.readFileSync('./assets/edit.m4v');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
 break
 case 'beat10':
