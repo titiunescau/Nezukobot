@@ -703,6 +703,13 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("oiii meu amor")
 	}
+			
+			
+		if (messagesC.includes("tô bem e vc ?")){
+			client.updatePresence(from, Presence.composing)
+			reply("Qbom, eu to bem")
+	}
+			
 
 		if (messagesC.includes("Titiu Nescau")){
 			client.updatePresence(from, Presence.composing)
