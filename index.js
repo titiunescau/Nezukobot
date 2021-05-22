@@ -701,17 +701,17 @@ if (text.includes("placa"))
 	
 		if (messagesC.includes("oiii")){
 			client.updatePresence(from, Presence.composing)
-			reply("oiii meu amor")
+			reply("oiii meu amor,tudo bem ?")
 	}
 			
 			
-		if (messagesC.includes("tô bem e vc ?")){
+		if (messagesC.includes("ss e com vc ?")){
 			client.updatePresence(from, Presence.composing)
 			reply("Qbom, eu to bem")
 	}
 			
 
-		if (messagesC.includes("Titiu Nescau")){
+		if (messagesC.includes("Nescau")){
 			client.updatePresence(from, Presence.composing)
 			reply("Saca só")
 	}
@@ -752,9 +752,9 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
-			if (messagesC.includes("bu")){
+			if (messagesC.includes("aaaa")){
 				client.sendMessage(from, Presence.composing)
-				reply("ce")
+				reply("eeeeeee")
 	}
 	
 			if (messagesC.includes("bot")){
@@ -763,7 +763,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("Dbz")){
+			if (messagesC.includes("dbz")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/Dbz.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -807,7 +807,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
-			if (messagesC.includes("Nezuko")){
+			if (messagesC.includes("nezuko")){
 			client.updatePresence(from, Presence.composing) 
 	     	const d = fs.readFileSync('./sticker/pqp.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
@@ -2172,7 +2172,7 @@ case 'beat9':
 tujuh = fs.readFileSync('./assets/beatn.m4a');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-case 'Nezuke2':
+case 'nezuke2':
 tujuh = fs.readFileSync('./assets/edit.mp4');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
 break
@@ -2825,7 +2825,7 @@ break
 						var ini = anti.clientOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
-						reply('Desativar grupo anti-link com sucesso neste grupo ✔️')
+						reply('Desativar grupo anti-link com sucesso neste grupo😭 ✔️')
 					} else {
 						reply('1 para ativar, 0 para desativar ')
 					}
@@ -4408,7 +4408,7 @@ break
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Você quer adicionar um gênio?')
+					if (args.length < 1) return reply('Você quer adicionar um amigo😏?')
 					if (args[0].startsWith('08')) return reply('Use o código do país, man \n ex: +55 89981246187')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
@@ -4541,7 +4541,7 @@ break
                     reply('Alterado com sucesso o ícone do Grupo')
                     break
                 case 'bc2':
-					if (!isadminbot) return reply('Quem é Você?')
+					if (!isadminbot) return reply('Quem é Você?🧐')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
