@@ -282,8 +282,8 @@ async function starts() {
 			pushname = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
-					wait: 'Pera ae parsa,NEZUKO  ta Trabalhando porra',
-					success: 'Pronto',
+					wait: ' Espere um pouco amor,Eu estou processando okay amor❤️?',
+					success: 'Pronto vidah',
 					levelon: '*leveling* *ativado*',
 					leveloff: '*leveling* *desativado*',
 					levelnoton: ' *leveling não ativado*',
@@ -293,12 +293,12 @@ async function starts() {
 				Iv: 'Link invalido'
 				},
 				only: {
-					group: 'Este comando so pode ser usado nos grupos maninho',
+					group: 'Este comando so pode ser usado nos grupos neném',
 					premium: `Ei {pushname2} Só usuarios PREMIUMS podem usar este comando*`,
 					mod: 'ESTE PEDIDO É ESPECÍFICO PARA O MODERADOR DO ⚡NEZUKO BOT ⚡*',
 					benned: 'Você foi banido, contate o dono para te desbanir',
-					ownerG: 'Só o Titiu Nescau  pode usar esse comando parsa',
-					ownerB: 'Só o Titiu Nescau  pode usar esse comando parsa',
+					ownerG: 'Só o Titiu Nescau  pode usar esse comando bb',
+					ownerB: 'Só o Titiu Nescau  pode usar esse comando bb',
 					userB: `──「 LISTA 」──\nOlá ${pushname} !\nVocê não esta registrado como amigo do meu dono então pessa para ele te adicionar como amigo\n\n──「 ⚡NEZUKO BOT ⚡ 」──`,
 					admin: 'Este comando só pode ser usado por administradores de grupo!',
 					Badmin: 'Este comando so pode ser usado quando o ⚡NEZUKO BOT ⚡ se torna ADM do grupo parsa',
@@ -436,7 +436,7 @@ if (text.includes("placa"))
         if (messagesC.includes("preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir ,mas se fizer novamente eu dou ban')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -469,7 +469,7 @@ if (text.includes("placa"))
 	        if (messagesC.includes("seupreto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir ,mas se fizer novamente vou te dar ban ')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -535,7 +535,7 @@ if (text.includes("placa"))
 	        if (messagesC.includes("pretoimundo")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir ,mas um hora eu vou fdp')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -568,7 +568,7 @@ if (text.includes("placa"))
 	        if (messagesC.includes("pq vc e preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir , mas se continuar vou dar ban')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -704,7 +704,7 @@ if (text.includes("placa"))
 			reply("Eae meu bom")
 	}
 
-		if (messagesC.includes("*Titiu Nescau ")){
+		if (messagesC.includes("Titiu Nescau ")){
 			client.updatePresence(from, Presence.composing)
 			reply("Saca só")
 	}
