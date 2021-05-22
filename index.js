@@ -208,10 +208,10 @@ async function starts() {
 
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
-		start('2', 'Calma Rapaiz')
+		start('2', 'Calma moh')
 	})
 	client.on('open', () => {
-		success('2', 'Sem pressa parsa')
+		success('2', 'Sem pressa neném')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -701,10 +701,10 @@ if (text.includes("placa"))
 	
 		if (messagesC.includes("oiii")){
 			client.updatePresence(from, Presence.composing)
-			reply("Eae meu bom")
+			reply("oiii meu amor")
 	}
 
-		if (messagesC.includes("Titiu Nescau ")){
+		if (messagesC.includes("Titiu Nescau")){
 			client.updatePresence(from, Presence.composing)
 			reply("Saca só")
 	}
@@ -733,7 +733,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("@558981246187")){
+			if (messagesC.includes("@17853338499")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/chapa.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
