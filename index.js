@@ -705,7 +705,7 @@ if (text.includes("placa"))
 	}
 			
 			
-		if (messagesC.includes("ss e com vc ?")){
+		if (messagesC.includes("Ss e com vc?")){
 			client.updatePresence(from, Presence.composing)
 			reply("Qbom, eu to bem")
 	}
