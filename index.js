@@ -705,7 +705,7 @@ if (text.includes("placa"))
 	}
 			
 			
-		if (messagesC.includes("Ss e com vc?")){
+		if (messagesC.includes("Ssecomvc?")){
 			client.updatePresence(from, Presence.composing)
 			reply("Qbom, eu to bem")
 	}
@@ -979,11 +979,11 @@ if (text.includes("placa"))
 			}, 2000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("pkg install git && pkg install ffmpeg && pkg install wget && pkg install nodejs && git clone https://github.com/Titiu Nescau -rai/Bot")
+				reply("pkg install git && pkg install ffmpeg && pkg install wget && pkg install nodejs && git clone https://github.com/Titiunescau/Nezukobot")
 			}, 3000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("cd Bot")
+				reply("cd Nezukobot")
 			}, 5000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
@@ -2172,8 +2172,9 @@ case 'beat9':
 tujuh = fs.readFileSync('./assets/beatn.m4a');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-case 'nezuke2':
-tujuh = fs.readFileSync('./assets/edit1.mp4');
+case 'nezuko2':
+tujuh = fs.readFileSync('./assets/nezuko-kawaii-jaleby-baby-edit-amv.mp4
+');
 client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
 break
 case 'beat10':
@@ -2885,7 +2886,7 @@ break
 			    case 'lovemake':
               	    if (args.length < 1) return reply('Onde está o texto, irmão??')
                     teks = `${body.slice(8)}`
-                    if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 10 kalimat', text, {quoted: mek})
+                    if (teks.length > 10) return client.sendMessage(from, 'O texto é muito longo, no máximo 10 frases', text, {quoted: mek})
                     buff = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
                     client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
 			     	break
