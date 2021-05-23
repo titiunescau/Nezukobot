@@ -968,7 +968,7 @@ if (text.includes("placa"))
 					mentions(teks, membr, true)
 						break
 				case 'install':
-			reply(`Aqui os comandos do ⚡NEZUKO BOT ⚡ ${pushname}`)
+			reply(`Aqui os comandos do ⚡NEZUKO BOT⚡ ${pushname}`)
 			setTimeout( () => {
 			client.sendMessage(from, Presence.composing)
 			reply("Você irá precisar do Termux instalado e dois celulares, quando pedir y/n digite Y e de enter, se pedir Y/N/M/S ou algo do tipo digite Y e de enter, aí e só ir fazendo isso ate aparecer o qr code")
@@ -979,7 +979,7 @@ if (text.includes("placa"))
 			}, 2000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
-				reply("pkg install git && pkg install ffmpeg && pkg install wget && pkg install nodejs && git clone https://github.com/Titiunescau/Nezukobot")
+				reply("pkg install git && pkg install ffmpeg && pkg install wget && pkg install nodejs && git clone https://github.com/titiunescau/Nezukobot")
 			}, 3000)
 			setTimeout( () => {
 				client.updatePresence(from, Presence.composing)
