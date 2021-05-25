@@ -888,11 +888,19 @@ if (text.includes("placa"))
 	     	const figu2 = fs.readFileSync('./sticker/pqp2.webp');
             client.sendMessage(from, figu2, sticker, {quoted: mek})
             		break
-		    case 'attp':
-                   if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}attp Toin gado`)
-                   attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(body.slice(5))}`)
-                   Nezuko.sendMessage(from, attp2, sticker, {quoted: mek})
-                        break
+		    
+                  case 'ttp':
+                  msgFilter.isFiltered(from)
+                  if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}ttp Toin gado`)
+                  attp2 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${encodeURIComponent(body.slice(4))}`)
+                  nezuko.sendMessage(from, attp2, sticker, {quoted: mek})
+                      break
+
+                case 'attp':
+                if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}attp Toin gado`)
+                attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(body.slice(5))}`)
+		nezuko.sendMessage(from, attp2, sticker, {quoted: mek})
+                       break
                 case 'eu':
                 putagg = await getBuffer(`https://i.ibb.co/TthtCSG/pakipariu-doido.jpg`)
                 client.sendMessage(from, putagg, buffer, {quoted: mek, caption: 'Vc'})
