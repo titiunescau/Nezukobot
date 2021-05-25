@@ -1192,6 +1192,12 @@ if (text.includes("placa"))
 					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl16}&bln=${gbl26}&thn=${gbl36}&apikey={BELI APIKEY BIAR WORK DI 0816546638}`, {method: 'get'})
 					reply(anu.result.hasil)
 					break
+		   case 'attp':
+                   if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}attp Toin gado`)
+                   attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(body.slice(5))}`)
+                   Nezuko.sendMessage(from, attp2, sticker, {quoted: mek})
+                   break
+
                    case 'modapk':
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, modapk(prefix), text, { quoted: mek })
