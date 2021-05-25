@@ -50,7 +50,8 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  *supergay              
 ┣⊱  *gostosa               
 ┣⊱  *casal                 
-┣⊱  ${prefix}cornos        
+┣⊱  ${prefix}cornos 
+┣⊱  *attp
 │                          
 ╰──────────────────────
 │═༒︎〘 MENU 〙༒︎══
@@ -115,7 +116,7 @@ const help = (prefix, sender, pushname, time) => {
 ┣⊱  **mia*           
 ┣⊱  **rize*          
 ┣⊱  **minato*        
-┣⊱  **naruto *       
+┣⊱  **naruto*       
 ┣⊱  **meme*          
 ┣⊱  **lofi*          
 ┣⊱  **malkova*       
