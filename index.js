@@ -888,7 +888,13 @@ if (text.includes("placa"))
 	     	const figu2 = fs.readFileSync('./sticker/pqp2.webp');
             client.sendMessage(from, figu2, sticker, {quoted: mek})
             		break
-		    
+		    case 'online':
+                    msgFilter.isFiltered(from)
+		    let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
+          	    let online = [...Object.keys(client.chats.get(ido).presences), client.user.jid]
+	            client.sendMessage(from, 'Lista de usuários online:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, text, { quoted: mek,
+  	            contextInfo: { mentionedJid: online }})
+				break
                  case 'ttp':
                  msgFilter.isFiltered(from)
                  if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}ttp Toin gado`)
