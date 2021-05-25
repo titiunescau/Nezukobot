@@ -891,7 +891,7 @@ if (text.includes("placa"))
 		    case 'attp':
                    if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}attp Toin gado`)
                    attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(body.slice(5))}`)
-                   tiringa.sendMessage(from, attp2, sticker, {quoted: mek})
+                   Nezuko.sendMessage(from, attp2, sticker, {quoted: mek})
                         break
                 case 'eu':
                 putagg = await getBuffer(`https://i.ibb.co/TthtCSG/pakipariu-doido.jpg`)
