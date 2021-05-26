@@ -3343,16 +3343,14 @@ break
 			client.sendPtt(from, './lindy/iri2.mp3', id)
 			break
                  case 'play':
-                reply(mess.wait)
-                play = body.slice(5)
-                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
-               if (anu.error) return reply(anu.error)
-                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
-                buffer = await getBuffer(anu.result.thumbnail)
-                lagu = await getBuffer(anu.result.url_audio)
-                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
-                await limitAdd(sender)
+                reply('espere um pouquinho nenem')
+                anu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${body.slice(5)}&apikey=estreia`)
+                if (anu.error) return reply(anu.error)
+                ingfomp3 = `Musica encontrada\n Titulo : ${anu.title}\nCanal: ${anu.channel}\nPublicado: ${anu.published}\nViews: ${anu.views}\n\n*Processando*`
+                buffer = await getBuffer(anu.thumb)
+                lagu = await getBuffer(anu.url)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: ingfomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', ptt:true})
                 break
 				case 'setnome':
                    if (!isGroup) return reply(mess.only.group)
