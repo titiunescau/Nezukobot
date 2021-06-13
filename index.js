@@ -872,9 +872,69 @@ if (text.includes("placa"))
 	            case 'menu':
 	            case 'help':
 	            	uptime = process.uptime ()
-                    putagg = await getBuffer(`https://i.ibb.co/W5p89Mb/nezukobot2.jpg`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname, time)})
-                    break
+                    var setP = [`https://i.ibb.co/YWsL78H/zenitsubot2.jpg`,`https://i.ibb.co/gzhxmPb/STK-20210604-WA0113.webp`]
+                const getFoto = setP[Math.floor(Math.random() * setP.length)]
+                const nescau = await getBuffer(getFoto)
+                client.sendMessage(from, nescau, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "⚡Nezuko⚡", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./sticker/kkk.webp')} } }, caption: help(prefix, sender, pushname, time)})
+                  break
+              case 'figu':
+			client.updatePresence(from, Presence.composing) 
+	     	const figu = fs.readFileSync('./sticker/pqp.webp');
+            client.sendMessage(from, figu, sticker, {quoted: mek})
+
+            client.updatePresence(from, Presence.composing) 
+	     	const figu1 = fs.readFileSync('./sticker/pqp1.webp');
+            client.sendMessage(from, figu1, sticker, {quoted: mek})
+
+            client.updatePresence(from, Presence.composing) 
+	     	const figu2 = fs.readFileSync('./sticker/pqp2.webp');
+            client.sendMessage(from, figu2, sticker, {quoted: mek})
+            		break 
+		        case 'ttp':
+                 msgFilter.isFiltered(from)
+                 if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}ttp Toin gado`)
+                 attp2 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${encodeURIComponent(body.slice(4))}`)
+                 client.sendMessage(from, attp2, sticker, {quoted: mek})
+                         break
+
+                       case 'attp':
+                 if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}attp Toin gado`)
+                 attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(body.slice(5))}`)
+                 client.sendMessage(from, attp2, sticker, {quoted: mek})
+                        break 
+					case 'openg':
+  case 'abrirg':
+client.updatePresence(from, Presence.composing)
+if (!isGroup) return reply(ptbr.group())
+if (!isGroupAdmins) return reply(ptbr.admin())
+if (!isBotGroupAdmins) return reply(ptbr.Badmin())
+open = {
+  text: `Grupo aberto por: @${sender.split("@")[0]}`,
+  contextInfo: {
+mentionedJid: [sender]
+  }
+}
+client.groupSettingChange (from, GroupSettingChange.messageSend, false)
+client.sendMessage(from, open, text, {
+  quoted: mek
+})
+break
+                            case 'fecharg':
+client.updatePresence(from, Presence.composing)
+if (!isGroup) return reply(ptbr.group())
+if (!isGroupAdmins) return reply(ptbr.admin())
+if (!isBotGroupAdmins) return reply(ptbr.Badmin())
+close = {
+text: `Grupo fechado por: @${sender.split("@")[0]}`,
+  contextInfo: {
+mentionedJid: [sender]
+  }
+}
+client.groupSettingChange (from, GroupSettingChange.messageSend, false)
+client.sendMessage(from, close, text, {
+  quoted: mek
+})
+break 
                 case 'figu':
 			client.updatePresence(from, Presence.composing) 
 	     	const figu = fs.readFileSync('./sticker/pqp.webp');
@@ -902,12 +962,7 @@ if (text.includes("placa"))
                  attp2 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${encodeURIComponent(body.slice(4))}`)
                  client.sendMessage(from, attp2, sticker, {quoted: mek})
                          break
-
-                 case 'attp':
-                 if (args.length < 1) return reply(`Use dessa forma:\nComando: ${prefix}attp Toin gado`)
-                 attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(body.slice(5))}`)
-                 client.sendMessage(from, attp2, sticker, {quoted: mek})
-                        break
+					
                 case 'eu':
                 putagg = await getBuffer(`https://i.ibb.co/TthtCSG/pakipariu-doido.jpg`)
                 client.sendMessage(from, putagg, buffer, {quoted: mek, caption: 'Vc'})
