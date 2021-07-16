@@ -937,8 +937,8 @@ client.sendMessage(from, close, text, {
 break 
                 case 'figu':
 			client.updatePresence(from, Presence.composing) 
-	     	const figu = fs.readFileSync('./sticker/pqp.webp');
-            client.sendMessage(from, figu, sticker, {quoted: mek})
+	     	const digu = fs.readFileSync('./sticker/pqp.webp');
+            client.sendMessage(from, digu, sticker, {quoted: mek})
 
             client.updatePresence(from, Presence.composing) 
 	     	const figu1 = fs.readFileSync('./sticker/pqp1.webp');
