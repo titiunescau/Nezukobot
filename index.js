@@ -883,12 +883,12 @@ if (text.includes("placa"))
             client.sendMessage(from, figu, sticker, {quoted: mek})
 
             client.updatePresence(from, Presence.composing) 
-	     	const figu1 = fs.readFileSync('./sticker/pqp1.webp');
-            client.sendMessage(from, figu1, sticker, {quoted: mek})
+	     	const higu1 = fs.readFileSync('./sticker/pqp1.webp');
+            client.sendMessage(from, higu1, sticker, {quoted: mek})
 
             client.updatePresence(from, Presence.composing) 
-	     	const figu2 = fs.readFileSync('./sticker/pqp2.webp');
-            client.sendMessage(from, figu2, sticker, {quoted: mek})
+	     	const migu2 = fs.readFileSync('./sticker/pqp2.webp');
+            client.sendMessage(from, migu2, sticker, {quoted: mek})
             		break 
 		        case 'ttp':
                  msgFilter.isFiltered(from)
